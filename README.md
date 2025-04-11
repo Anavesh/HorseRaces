@@ -26,7 +26,6 @@
 | **UI**          | UIKit, Programmatic Layout          |
 | **Анимации**    | `UIViewPropertyAnimator`            |
 | **Хранение**    | Singleton + `UserDefaults`          |
-| **Тестирование**| `XCTest` (в разработке)             |
 
 ---
 
