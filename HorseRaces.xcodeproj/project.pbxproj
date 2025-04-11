@@ -9,21 +9,35 @@
 /* Begin PBXBuildFile section */
 		A58E8C1E2DA80FBF005AD78A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58E8C1D2DA80FBF005AD78A /* AppDelegate.swift */; };
 		A58E8C202DA80FBF005AD78A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58E8C1F2DA80FBF005AD78A /* SceneDelegate.swift */; };
-		A58E8C222DA80FBF005AD78A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58E8C212DA80FBF005AD78A /* ViewController.swift */; };
-		A58E8C252DA80FBF005AD78A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A58E8C242DA80FBF005AD78A /* Base */; };
+		A58E8C222DA80FBF005AD78A /* RaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58E8C212DA80FBF005AD78A /* RaceViewController.swift */; };
 		A58E8C272DA80FC0005AD78A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A58E8C262DA80FC0005AD78A /* Assets.xcassets */; };
 		A58E8C2A2DA80FC0005AD78A /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A58E8C292DA80FC0005AD78A /* Base */; };
+		A58E8C332DA8140F005AD78A /* RaceHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58E8C322DA8140F005AD78A /* RaceHistoryViewController.swift */; };
+		A58E8C352DA82453005AD78A /* RaceHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58E8C342DA82453005AD78A /* RaceHistory.swift */; };
+		A58E8C382DA82DFE005AD78A /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58E8C372DA82DFE005AD78A /* UIColor+Extensions.swift */; };
+		A58E8C3B2DA82E20005AD78A /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58E8C3A2DA82E20005AD78A /* AlertManager.swift */; };
+		A58E8C3E2DA82E77005AD78A /* RaceTrackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58E8C3D2DA82E77005AD78A /* RaceTrackView.swift */; };
+		A58E8C402DA82EA4005AD78A /* ControlPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58E8C3F2DA82EA4005AD78A /* ControlPanelView.swift */; };
+		A58E8C422DA82EB7005AD78A /* HorseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58E8C412DA82EB7005AD78A /* HorseView.swift */; };
+		A58E8C442DA84453005AD78A /* RaceTrackView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58E8C432DA84453005AD78A /* RaceTrackView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A58E8C1A2DA80FBF005AD78A /* HorseRaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HorseRaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A58E8C1D2DA80FBF005AD78A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A58E8C1F2DA80FBF005AD78A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A58E8C212DA80FBF005AD78A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A58E8C242DA80FBF005AD78A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A58E8C212DA80FBF005AD78A /* RaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceViewController.swift; sourceTree = "<group>"; };
 		A58E8C262DA80FC0005AD78A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A58E8C292DA80FC0005AD78A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A58E8C2B2DA80FC0005AD78A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A58E8C322DA8140F005AD78A /* RaceHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceHistoryViewController.swift; sourceTree = "<group>"; };
+		A58E8C342DA82453005AD78A /* RaceHistory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceHistory.swift; sourceTree = "<group>"; };
+		A58E8C372DA82DFE005AD78A /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		A58E8C3A2DA82E20005AD78A /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		A58E8C3D2DA82E77005AD78A /* RaceTrackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceTrackView.swift; sourceTree = "<group>"; };
+		A58E8C3F2DA82EA4005AD78A /* ControlPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPanelView.swift; sourceTree = "<group>"; };
+		A58E8C412DA82EB7005AD78A /* HorseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorseView.swift; sourceTree = "<group>"; };
+		A58E8C432DA84453005AD78A /* RaceTrackView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RaceTrackView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,62 @@
 		A58E8C1C2DA80FBF005AD78A /* HorseRaces */ = {
 			isa = PBXGroup;
 			children = (
-				A58E8C1D2DA80FBF005AD78A /* AppDelegate.swift */,
-				A58E8C1F2DA80FBF005AD78A /* SceneDelegate.swift */,
-				A58E8C212DA80FBF005AD78A /* ViewController.swift */,
-				A58E8C232DA80FBF005AD78A /* Main.storyboard */,
+				A58E8C452DA845AE005AD78A /* Application */,
+				A58E8C3C2DA82E68005AD78A /* Views */,
+				A58E8C392DA82E0F005AD78A /* Managers */,
+				A58E8C362DA82DD7005AD78A /* Extensions */,
+				A58E8C312DA813EC005AD78A /* ViewControllers */,
 				A58E8C262DA80FC0005AD78A /* Assets.xcassets */,
 				A58E8C282DA80FC0005AD78A /* LaunchScreen.storyboard */,
 				A58E8C2B2DA80FC0005AD78A /* Info.plist */,
 			);
 			path = HorseRaces;
+			sourceTree = "<group>";
+		};
+		A58E8C312DA813EC005AD78A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A58E8C212DA80FBF005AD78A /* RaceViewController.swift */,
+				A58E8C322DA8140F005AD78A /* RaceHistoryViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A58E8C362DA82DD7005AD78A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A58E8C372DA82DFE005AD78A /* UIColor+Extensions.swift */,
+				A58E8C432DA84453005AD78A /* RaceTrackView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A58E8C392DA82E0F005AD78A /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A58E8C342DA82453005AD78A /* RaceHistory.swift */,
+				A58E8C3A2DA82E20005AD78A /* AlertManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		A58E8C3C2DA82E68005AD78A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A58E8C3D2DA82E77005AD78A /* RaceTrackView.swift */,
+				A58E8C3F2DA82EA4005AD78A /* ControlPanelView.swift */,
+				A58E8C412DA82EB7005AD78A /* HorseView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A58E8C452DA845AE005AD78A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A58E8C1D2DA80FBF005AD78A /* AppDelegate.swift */,
+				A58E8C1F2DA80FBF005AD78A /* SceneDelegate.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +188,6 @@
 			files = (
 				A58E8C272DA80FC0005AD78A /* Assets.xcassets in Resources */,
 				A58E8C2A2DA80FC0005AD78A /* Base in Resources */,
-				A58E8C252DA80FBF005AD78A /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +198,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A58E8C222DA80FBF005AD78A /* ViewController.swift in Sources */,
+				A58E8C352DA82453005AD78A /* RaceHistory.swift in Sources */,
+				A58E8C3E2DA82E77005AD78A /* RaceTrackView.swift in Sources */,
+				A58E8C422DA82EB7005AD78A /* HorseView.swift in Sources */,
+				A58E8C442DA84453005AD78A /* RaceTrackView+Extensions.swift in Sources */,
+				A58E8C382DA82DFE005AD78A /* UIColor+Extensions.swift in Sources */,
+				A58E8C222DA80FBF005AD78A /* RaceViewController.swift in Sources */,
 				A58E8C1E2DA80FBF005AD78A /* AppDelegate.swift in Sources */,
+				A58E8C332DA8140F005AD78A /* RaceHistoryViewController.swift in Sources */,
+				A58E8C402DA82EA4005AD78A /* ControlPanelView.swift in Sources */,
+				A58E8C3B2DA82E20005AD78A /* AlertManager.swift in Sources */,
 				A58E8C202DA80FBF005AD78A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +215,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A58E8C232DA80FBF005AD78A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A58E8C242DA80FBF005AD78A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A58E8C282DA80FC0005AD78A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,7 +356,6 @@
 				INFOPLIST_FILE = HorseRaces/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -323,7 +382,6 @@
 				INFOPLIST_FILE = HorseRaces/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

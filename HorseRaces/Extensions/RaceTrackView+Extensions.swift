@@ -1,8 +1,12 @@
-//
-//  RaceTrackView+Extensions.swift
-//  HorseRaces
-//
-//  Created by Naira on 10.04.2025.
-//
+import UIKit
 
-import Foundation
+extension RaceTrackView {
+    func stopAllHorses() {
+        horseViews.forEach {
+            $0.stopRace()
+            if let presentationFrame = $0.layer.presentation()?.frame {
+                $0.frame = presentationFrame
+            }
+        }
+    }
+}

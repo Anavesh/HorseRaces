@@ -1,67 +1,72 @@
-//
-//  SceneDelegate.swift
-//  HorseRaces
-//
-//  Created by Naira on 10.04.2025.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
-
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
-       
         guard let windowScene = (scene as? UIWindowScene) else { return }
+        setupWindow(for: windowScene)
+    }
+    
+    // MARK: - Window Configuration
+    private func setupWindow(for windowScene: UIWindowScene) {
         window = UIWindow(windowScene: windowScene)
-        window?.rootViewController = createTabBarController()
+        window?.rootViewController = createMainTabBarController()
         window?.makeKeyAndVisible()
     }
     
-    private func createTabBarController() -> UITabBarController {
+    // MARK: - Tab Bar Setup
+    private func createMainTabBarController() -> UITabBarController {
         let tabBarController = UITabBarController()
+        configureTabBarAppearance(tabBarController.tabBar)
         
-        UITabBar.appearance().backgroundColor = #colorLiteral(red: 0.9215686275, green: 0.9176470588, blue: 1, alpha: 1)
-        UITabBar.appearance().barTintColor = #colorLiteral(red: 0.9215686275, green: 0.9176470588, blue: 1, alpha: 1)
-        UITabBar.appearance().tintColor = #colorLiteral(red: 0.2392156863, green: 0.231372549, blue: 0.9529411765, alpha: 1)
-        UITabBar.appearance().unselectedItemTintColor = #colorLiteral(red: 1, green: 0.1607843137, blue: 0.1607843137, alpha: 1)
+        tabBarController.viewControllers = [
+            createRaceViewController(),
+            createHistoryViewController()
+        ]
         
-        let raceVC = createNavController(for: RaceViewController(), title: "Race", tag: 0)
-        let raceHistoryVC = createNavController(for: RaceHistoryViewController(), title: "History", tag: 1)
-        
-        tabBarController.viewControllers = [raceVC, raceHistoryVC]
         return tabBarController
     }
     
-    private func createNavController(
-        for rootViewController: UIViewController,
-        title: String,
-        tag: Int
-    ) -> UINavigationController {
-        
-        let navController = UINavigationController(rootViewController: rootViewController)
-        
-        navController.tabBarItem = UITabBarItem(
-            title: title,
-            image: nil,
-            tag: tag
+    private func configureTabBarAppearance(_ tabBar: UITabBar) {
+        tabBar.backgroundColor = .secondarySystemBackground
+        tabBar.tintColor = .systemIndigo
+        tabBar.unselectedItemTintColor = .systemGray
+    }
+    
+    // MARK: - View Controllers Factory
+    private func createRaceViewController() -> UIViewController {
+        let controller = RaceViewController()
+        return wrapInNavigation(
+            controller: controller,
+            title: "Race",
+            icon: .init(systemName: "flag.checkered")
         )
-        
-        navController.navigationBar.tintColor = .systemBlue
+    }
+    
+    private func createHistoryViewController() -> UIViewController {
+        let controller = RaceHistoryViewController()
+        return wrapInNavigation(
+            controller: controller,
+            title: "History",
+            icon: .init(systemName: "clock")
+        )
+    }
+    
+    // MARK: - Navigation Controller Helper
+    private func wrapInNavigation(
+        controller: UIViewController,
+        title: String,
+        icon: UIImage?
+    ) -> UINavigationController {
+        let navController = UINavigationController(rootViewController: controller)
+        navController.tabBarItem = UITabBarItem(title: title, image: icon, selectedImage: nil)
+        navController.navigationBar.prefersLargeTitles = true
+        controller.navigationItem.title = title
         return navController
     }
 
-    func sceneDidDisconnect(_ scene: UIScene) {}
-
-    func sceneDidBecomeActive(_ scene: UIScene) {}
-
-    func sceneWillResignActive(_ scene: UIScene) {}
-
-    func sceneWillEnterForeground(_ scene: UIScene) {}
-    
-    func sceneDidEnterBackground(_ scene: UIScene){}
-
+    // MARK: - Scene Lifecycle (оставлены только используемые методы)
+    func sceneDidEnterBackground(_ scene: UIScene) {}
 }
-
